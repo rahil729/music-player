@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+       
+
+<header>
+    <img src="playlist.svg" alt="playlist" id="playlist-img">
+    <h2> Feel the music</h2>
+    <img src="music.svg" alt="music" id="music-img">
+</header>
+ <main>
+    <div class="left">
+    <div class="song-image">
+    <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MmU0c3ZpbmkzYzhtdXZ0enhtOXdpdDQ0ZDRjYzMxd3g5a3QwMWRmaSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/PSe2bc2XLMBFGS9ag6/giphy.gif" alt="anime" id="musicanime">
+
+    </div>
+    <div class="volume-div">
+        <div class="volume-img">
+             <img src="volume.svg" alt="volume"  id="vol-svg">
+        </div>
+        <input type="range" id="volume-range" onchange="setvolume()">
+
+    
+    </div>
+    </div>
+    <div class="right">
+<div class="details">
+    <h3 id="song-name">Running up that hill</h3>
+    <h5 id="song-artist">kate bush</h5>
+</div>
+<input type="range" id="song-duration"  onchange="changesongduration()">
+<div class="control">
+    <div class="previous-img">
+            <img src="previous.svg" alt="previous" id="previous-img"
+             onclick="previoussong()">
+
+    </div>
+    <div class="play-img">
+            <img src="play.svg" alt="play" id="play-img" 
+             onclick="playpause()">
+
+    </div>
+    <div class="next-img">
+            <img src="next.svg" alt="next" id="next-img" 
+             onclick="nextsong()">
+
+    </div>
+</div>
+
+    </div>
+    <div class="playlist">
+    <div class="playlist-song">
+        <img src="running.jpg" alt="img">
+        <div class="song-detail">
+            <h2>Running up that hill</h2>
+            <h5>kate bush</h5>
+        </div>
+    </div>    
+    <div class="playlist-song">
+        <img src="end.jpg" alt="img">
+        <div class="song-detail">
+            <h2>End of beginning</h2>
+            <h5>djo</h5>
+        </div>
+    </div>    
+    <div class="playlist-song">
+        <img src="gone.jpg" alt="img">
+        <div class="song-detail">
+            <h2>Gone gone gone</h2>
+            <h5>philips</h5>
+        </div>
+    </div>    
+    <div class="playlist-song">
+        <img src="asma.jpg" alt="img">
+        <div class="song-detail">
+            <h2>Asma ul husna</h2>
+            <h5>mishary rashid alafasy</h5>
+        </div>
+    </div>    
+  
+    </div>
+ </main>
+ <script src="script.js"></script>  
+</body>
+</html>
